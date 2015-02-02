@@ -1,3 +1,6 @@
+#น.ส.วรินทร เขมชัยวิพุธ 5510613259
+#นายธนกร เหลืองขจรวิทย์ 5510613309rails new rottenpotatoes -T
+
 def sum arr
   # YOUR CODE HERE
   if arr.length == 0 

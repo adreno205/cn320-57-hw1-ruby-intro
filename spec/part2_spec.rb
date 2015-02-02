@@ -1,3 +1,6 @@
+#น.ส.วรินทร เขมชัยวิพุธ 5510613259
+#นายธนกร เหลืองขจรวิทย์ 5510613309
+
 require 'part2'
 require 'rspec'
 require 'rspec/mocks'

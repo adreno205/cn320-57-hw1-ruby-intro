@@ -1,3 +1,6 @@
+#น.ส.วรินทร เขมชัยวิพุธ 5510613259
+#นายธนกร เหลืองขจรวิทย์ 5510613309
+
 require 'part3'
 describe "BookInStock" do
   it "should be defined" do

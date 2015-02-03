@@ -1,5 +1,5 @@
 #น.ส.วรินทร เขมชัยวิพุธ 5510613259
-#นายธนกร เหลืองขจรวิทย์ 5510613309rails new rottenpotatoes -T
+#นายธนกร เหลืองขจรวิทย์ 551061-T
 
 def sum arr
   # YOUR CODE HERE
@@ -24,19 +24,9 @@ def max_2_sum arr
      return z[z.length-1]+z[z.length-2]  
 end
 
-def sum_to_n? arr, n
-  # YOUR CODE HERE
-  if arr.length==0
-    return n==0
-  elsif arr.length==1
-      return false
-  else
-    arr.each {|x| arr.each {|y| 
-    if x+y==n
-    return true
-    end
-    }}
-     
+def sum_to_n?(arr, n)
+  if arr.length == 0 
+    return false
   end
-  return false
+  (arr.empty? && n.zero?) || arr.permutation(2).any? { |a, b| a + b == n }
 end

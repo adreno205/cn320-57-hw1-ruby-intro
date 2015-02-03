@@ -24,6 +24,5 @@ attr_accessor :price
     textprice = "$%.2f" % @price
     return textprice
   end
-  
 end
 

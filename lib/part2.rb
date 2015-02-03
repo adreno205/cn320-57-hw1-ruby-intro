@@ -8,19 +8,22 @@ def hello(name)
   
 end
 
-def starts_with_consonant? (s)
-  # YOUR CODE HERE
-  #if s[0] =~ /[aeiouAEIOU]/i
-   arr = s.split(//)
-    if arr[0] == ("a"||"e"||"i"||"o"||"u"||"A"||"E"||"I"||"O"||"U")
-    return false
-  else
-    return true
-  end  
+def starts_with_consonant?(s)
+   return false if s.length == 0
+ 
+   return false if s[0].upcase.match(/\W/)
+   
+   n = "AEIOU"
+   m = s[0]
+   return true if not n.include? m.upcase 
+   false
 end
 
 def binary_multiple_of_4? (s)
-  # YOUR CODE HERE
+  return false if s.length == 0
+ 
+  return false if s.match(/\D/) or !/[0-1]/.match(s) 
+      
   num = s.to_i(2)
   if num%4==0
       return true
